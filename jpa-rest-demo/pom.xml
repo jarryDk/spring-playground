@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>dk.jarry.spring.playground</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>jpa-rest-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jpa-rest-demo</name>
 	<description>Jpa/Rest demo project for Spring Boot</description>
