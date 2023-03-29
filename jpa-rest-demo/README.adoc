@@ -1,0 +1,44 @@
+= jpa-rest-demo
+
+This project is created to use Jdk20.
+
+.Start Postgres
+[source,bash]
+----
+podman run -it \
+    --rm=true \
+    --name postgres-spring-playground \
+    -e POSTGRES_USER=spring \
+    -e POSTGRES_PASSWORD=playground \
+    -e POSTGRES_DB=spring-playground \
+    -p 5432:5432 \
+    postgres:15
+----
+
+.application.properties
+----
+spring.datasource.url=jdbc:postgresql://localhost:5432/spring-playground
+spring.datasource.username=spring
+spring.datasource.password=playground
+----
+
+.run the spring-boot app
+[source,bash]
+----
+mvn spring-boot:run
+----
+
+
+Doing `mvn spring-boot:runmvn spring-boot:run`  data will be loaded into the database.
+
+Endpoints in the app
+
+- http://localhost:8080/hello
+- http://localhost:8080/person/byLastName/Bauer
+
+
+== Links
+
+- https://docs.spring.io/spring-boot/docs/current/reference/html/using.html#using.build-systems[Build- Systems -> Starters]
+- https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.developing-auto-configuration.custom-starter[Creating Your Own Auto-configuration -> Creating Your Own Starter]
+- https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#actuator[Production-ready Features]

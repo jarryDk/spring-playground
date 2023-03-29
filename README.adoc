@@ -1,0 +1,13 @@
+= Spring Boot 3
+
+.run the spring-boot app
+[source,bash]
+----
+mvn spring-boot:run
+----
+
+== jpa-rest-demo
+
+Demo the use of using Postgres to store data for a REST endpoint.
+
+link:jpa-rest-demo[jpa-rest-demo]
