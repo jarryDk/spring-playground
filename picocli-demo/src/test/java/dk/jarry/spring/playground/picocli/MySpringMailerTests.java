@@ -1,10 +1,10 @@
-package dk.jarry.spring.playground.picoclidemo;
+package dk.jarry.spring.playground.picocli;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PicocliDemoApplicationTests {
+class MySpringMailerTests {
 
 	@Test
 	void contextLoads() {

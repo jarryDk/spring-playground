@@ -1,0 +1,25 @@
+= picocli-demo
+
+.Try it out directly via maven
+[source,bash]
+----
+mvn spring-boot:run \
+    -Dspring-boot.run.arguments="--to hans@mustermann.de \
+                                 --to zhang@san.cn \
+                                 --subject Testmail Easy mailing with Spring Boot and picocli"
+----
+
+.Try it out via builing with maven and from terminal
+[source,bash]
+----
+mvn clean package
+java -jar target/picocli-demo-0.0.1-SNAPSHOT.jar \
+    mailCommand --to hans@mustermann.de \
+                --to zhang@san.cn \
+                --subject Testmail Easy mailing with Spring Boot and picocli
+----
+
+== Link
+
+- https://picocli.info/#_spring_boot_example
+- https://github.com/remkop/picocli/tree/main/picocli-spring-boot-starter
